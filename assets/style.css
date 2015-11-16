@@ -1,7 +1,7 @@
-/* BGR Logo */
+/* BGR Logo
 .bgr-svg-logo {
-  width: 60%;
-}
+  width: 60%; /* this doesn't work on svg had to change the viewport 
+} */
 
 
 

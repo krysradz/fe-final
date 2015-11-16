@@ -8,14 +8,16 @@ $(document).ready(function() {
   });
 });
 
+// .js for image thumbs and display
+
 var myImage= new Array();
-myImage[0]="a1-pikachu.jpeg";
-myImage[1]="a2-raichu.jpeg";
-myImage[2]="b1-magikarp.jpeg";
-myImage[3]="b2-gyarados.jpeg";
-myImage[4]="c1-bulbasaur.jpeg";
-myImage[5]="c2-ivysaur.jpeg";
-myImage[6]="c3-venusaur.jpeg";
+myImage[0]="imagefile.jpg";
+myImage[1]="imagefile.jpg";
+myImage[2]="imagefile.jpg";
+myImage[3]="imagefile.jpg";
+myImage[4]="imagefile.jpg";
+myImage[5]="imagefile.jpg";
+myImage[6]="imagefile.jpg";
 
 var ImageCnt = 0;
 
