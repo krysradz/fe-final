@@ -1,11 +1,42 @@
 /* BGR Logo
 .bgr-svg-logo {
-  width: 60%; /* this doesn't work on svg had to change the viewport 
+  width: 60%; /* this doesn't work on svg had to change the viewport
 } */
+
+/* key frame animation */
+
+svg {
+  position: fixed;
+  top: 20px;
+  z-index: -4;
+  animation: fly 2s;
+}
+
+@keyframes fly {
+  0% {
+    left: 3000px;
+    transform: rotate(10deg);
+    transform-origin: 50% 50%;
+  }
+  90% {
+    left: 20px;
+    transform: rotate(10deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    left: 0px;
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+}
 
 
 
 /* nav menus */
+
+.nav {
+  margin-top: 600px;
+}
 
 button {
   text-shadow: 1px 1px 2px black;
@@ -59,6 +90,14 @@ ul.subnav {
 .hidden {
   display: none;
 }
+
+/* body content wrapper */
+
+.content-wrapper {
+  width: 98%;
+  background-color: rgba(255,255,255,.4)
+}
+
 
 
 /* pokemon image gallery styling */
