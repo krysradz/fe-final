@@ -1,4 +1,4 @@
-// .js to hide menus and have them appear on hover
+// .js to hide menus and have them appear on hover (likely from class)
 
 $(document).ready(function() {
   $('.nav li').hover(function() {
@@ -6,9 +6,25 @@ $(document).ready(function() {
     }, function() {
       $(this).find('.subnav').addClass('hidden');
   });
+
+  var  mn = $(".main-nav");
+      mns = "stuck";
+      hdr = $("svg").height();
+
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > hdr ) {
+      mn.addClass(mns);
+    } else {
+      mn.removeClass(mns);
+    }
+  });
+
 });
 
-// .js for image thumbs and display
+// .js from http://codepen.io/Guilh/pen/JLKbn to make the sticky nav
+
+
+// .js for image thumbs and display (from class?)
 
 var myImage= new Array();
 myImage[0]="imagefile.jpg";
