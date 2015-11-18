@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   var  mn = $(".main-nav");
       mns = "stuck";
-      hdr = $("svg").height();
+      hdr = $("svg").height(); // if adding any other svg's later, must give class to header svg and change to class name here
 
   $(window).scroll(function() {
     if( $(this).scrollTop() > hdr ) {

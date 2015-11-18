@@ -3,6 +3,65 @@
   width: 60%; /* this doesn't work on svg had to change the viewport
 } */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2274C1;
+}
+
+a:link, a:hover, a:active, a:visited {
+
+}
+
+
 /* key frame animation */
 
 svg {
@@ -30,20 +89,25 @@ svg {
   }
 }
 
-
+.content-wrapper {
+  margin-top: 640px; /* necessary to keep the sticky when the nav scrolls up */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  width: 98%;
+  background-color: rgba(255,255,255,.8)
+}
 
 /* nav menus */
-.content-wrapper {
-  margin-top: 600px;
-}
+
 .main-nav {
   width: 100%;
   position: absolute;
-  top: 550px;
-
-  /*position: relative;*/
+  top: 594px;
+  background-color: #FB9A5D;
+  padding: 10px 0px 10px 0px;
+  box-shadow: 2px 2px 5px #505050;
 }
-
 
 .stuck {
   position: fixed;
@@ -54,7 +118,7 @@ svg {
 button {
   text-shadow: 1px 1px 2px black;
   text-decoration: none;
-  color: pink;
+  color: #2274C1;
   font-size: 25px;
   border: 1px;
   border-color: black;
@@ -81,6 +145,7 @@ ul.nav {
 }
 
 .nav li {
+  text-decoration: none;
   display: inline-block;
   margin-right: 15px;
   vertical-align: top;
@@ -104,12 +169,7 @@ ul.subnav {
   display: none;
 }
 
-/* body content wrapper */
-
-.content-wrapper {
-  width: 98%;
-  background-color: rgba(255,255,255,.4)
-}
+/* body content */
 
 
 
