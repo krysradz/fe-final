@@ -53,6 +53,7 @@ table {
 }
 
 a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: #2274C1;
 }
@@ -67,7 +68,7 @@ a:link, a:hover, a:active, a:visited {
 svg {
   position: fixed;
   top: 20px;
-  z-index: -4;
+  z-index: -20;
   animation: fly 2s;
 }
 
@@ -96,17 +97,20 @@ svg {
   padding-top: 1em;
   width: 98%;
   background-color: rgba(255,255,255,.8)
+  z-index: -19;
 }
 
 /* nav menus */
 
 .main-nav {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   position: absolute;
   top: 594px;
   background-color: #FB9A5D;
   padding: 10px 0px 10px 0px;
   box-shadow: 2px 2px 5px #505050;
+  z-index: 4;
 }
 
 .stuck {
@@ -116,6 +120,8 @@ svg {
 }
 
 button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FB9A5D;
   text-shadow: 1px 1px 2px black;
   text-decoration: none;
   color: #2274C1;
@@ -129,13 +135,16 @@ a:hover {
 }
 
 button:hover {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: underline;
+  background-color: #FB9A5D;
 }
 
 ul.subnav {
-  background-color: #1367A1;
+  background-color: #FB9A5D;
   position: absolute;
   padding: 0;
+  box-shadow: 3px 3px 6px #2274C1;
 }
 
 ul.nav {
@@ -155,13 +164,13 @@ ul.nav {
 }
 
 ul.subnav {
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid #8CA487;
   padding: 3px;
 }
 
 .subnav li {
-  /*border: 1px solid black;
-  background: #9DC794;*/
+  font-family: 'Montserrat', sans-serif;
   display: block;
 }
 
@@ -171,6 +180,37 @@ ul.subnav {
 
 /* body content */
 
+.content-left {
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  margin: auto;
+  float: left;
+  background-color: rgba(255,255,255,.7);
+  z-index: 1;
+}
+
+/* .content-buffer {
+  width: 6%;
+  clear: both;
+  margin: auto;
+} */
+
+.content-right {
+  font-family: 'Montserrat', sans-serif;
+  width: 50%;
+  margin: auto;
+  float: right;
+  background-color: rgba(255,255,255,.7);
+  z-index: 1;
+}
+
+.actual-content {
+  font-family: 'Montserrat', sans-serif;
+  width: 96%;
+  margin: auto;
+  background-color: rgba(255,255,255,.7);
+  z-index: 2;
+}
 
 
 /* pokemon image gallery styling */
@@ -192,3 +232,18 @@ ul.subnav {
     padding: 1px;
     width: 250px;
   }
+
+
+/* footer */
+
+.footer {
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color: #FB9A5D;
+  padding: 10px 0px 10px 0px;
+  text-align: right;
+  z-index: 3;
+}
