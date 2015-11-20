@@ -257,3 +257,11 @@ ul.subnav {
   text-align: right;
   z-index: 3;
 }
+
+@media (max-height: 600px) {
+  .main-nav {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+  }
+}

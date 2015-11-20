@@ -27,13 +27,13 @@ $(document).ready(function() {
 // .js for image thumbs and display (from class?)
 
 var myImage= new Array();
-myImage[0]="imagefile.jpg";
-myImage[1]="imagefile.jpg";
-myImage[2]="imagefile.jpg";
-myImage[3]="imagefile.jpg";
-myImage[4]="imagefile.jpg";
-myImage[5]="imagefile.jpg";
-myImage[6]="imagefile.jpg";
+myImage[0]="joe-torre-by-s-costello.jpg";
+myImage[1]="regina-spektor-by-s-costello.jpg";
+myImage[2]="david-tennant-as-doctor-who-by-s-costello.jpg";
+myImage[3]="alex-kingston-as-river-song-by-s-costello.jpg";
+myImage[4]="jared-wright-by-s-costello.jpg";
+myImage[5]="peter-gwen-garfield-stone-by-s-costello.jpg";
+myImage[6]="the-view-by-s-costello.jpg";
 
 var ImageCnt = 0;
 
